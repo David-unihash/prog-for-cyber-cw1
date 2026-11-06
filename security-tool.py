@@ -53,11 +53,15 @@ def login_auth():
           print(f"Welcome {user}")
           break
 
+#This function is for exiting the program
+def exit():
+    print("Thank you for using the security tool.")
+
 #This function just makes sure we can select another tool in case we want to without ending the program and starting it up again
 def options():
     ans = input("Would you like to use another tool in the security tool? (y/n): ")
-    if ans == "y" or "Y":
-       print("Security Event Counter" \
+    if ans == "y" or ans == "Y":
+        print("Security Event Counter" \
             "\nBrute-Force Simulation" \
             "\nLogin Authentication" \
             "\nExit")
@@ -66,20 +70,23 @@ def options():
             security_event_counter()
         if answer == "Brute-Force Simulation":
             brute_force_simulator()
-        if answer == "Login Authentication"
+        if answer == "Login Authentication":
             login_auth()
-    if ans == "n" or "N":
-        print("Exit")
+    if ans == "n" or ans == "N":
+        exit()
         #Call exit 
 
 #This if and else block is for calling all the functions above they are chosen from the menu
 if option == "Security Event Counter":
     security_event_counter()
+    options()
 elif option == "Brute-Force Simulation":
     brute_force_simulator()
+    options()
 elif option == "Login Authentication":
     login_auth()
+    options()
 elif option == "Exit":
-    print("Thank you for using the security tool.")
+    exit()
 else:
     print("Not an option")
