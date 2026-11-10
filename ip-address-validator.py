@@ -4,20 +4,14 @@ def validate_ip(ip):
     ip = ip.strip().split(".")
 
     if len(ip) != 4:
-        return False
+        return "Invalid IP address format."
 
     for addresses in ip:
-        if not ip.isdigit():
-            return False
-        if not 0 <= int(ip) <= 255:
-            return False
-        if len(ip) > 1 and ip[0] == "0":
-            return False
+        if not addresses.isdigit():
+            return "Invalid IP address format."
+        if not 0 <= int(addresses) <= 255:
+            return "Invalid IP address range."
+        if len(addresses) > 1 and addresses[0] == "0":
+            return "Invalid IP address format."
 
-    return True
-
-ip_address = input("Enter an IP address: ")
-if validate_ip(ip_address):
-    print(f"Valid {ip_address}")
-else:
-    print("Invalid")
+    return "Valid IP address."
