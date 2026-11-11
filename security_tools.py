@@ -13,12 +13,16 @@ def validate_password(password):
 
     # Go through the password one character at a time
     for char in password:
+        #checks if a character is a digit
         if char.isdigit():
             has_digit = True
+        #checks if there are uppercase values in the password
         elif char.isupper():
             has_upper = True
+        #checks if there are lowercase values in the password
         elif char.islower():
             has_lower = True
+        #checks if there are special charcters in the passsword
         elif char in special_chars:
             has_special = True
 
@@ -35,17 +39,6 @@ def validate_password(password):
         return "Password must contain at least one special character."
 
     return "Password is valid."
-
-
-# keep asking until the password is good
-while True:
-    password = input("Enter a password: ")
-    result = validate_password(password)
-    print(result)
-
-    if result == "Password is valid.":
-        break
-
 
 #This function checks to validate an ip address
 def validate_ip(ip):
