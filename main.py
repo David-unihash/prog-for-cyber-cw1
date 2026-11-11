@@ -1,7 +1,10 @@
-import security_event_logger
+#import the file security_tools 
+import security_tools
+#import the functions from security_tools
 from security_tools import validate_password
 from security_tools import validate_ip
 from security_tools import generate_random_password 
+
 
 input_password = input("Enter your password: ")
 validation_result = validate_password(input_password)
