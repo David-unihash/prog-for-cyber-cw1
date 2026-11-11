@@ -11,7 +11,9 @@ user_info = {
 #Display the user information and event details
 print("Username: ", user_info["user_name"])
 print("IP Address: ", user_info["ip_address"])
+#update the user status
 user_info["status"] = "Inactive"
+#update the user risk level
 user_info["risk_level"] = "medium"
 # Display the updated user information and the remaining details
 print("Event: ", user_info["event_type"])
