@@ -14,5 +14,11 @@ A function that can validate IP Addresses to see if they are usable
 Task 4 - Security Incident Manager
 Using what I learned from dictionaries I am making an incident manager that updates about a security incident
 
-Task 5 - Reusable CyberSceuroty Utilities
-This Task asks a user for a password, an IP Address and if they both meet the requirements they are given access but if the password doesn't meet the requirement they can either enter a different one password or they get the option to generate a random password
+Task 5 - Reusable CyberSecurity Utilities This task does a number of things like password validation, IP checks and a password generator
+
+A list of the branches is as follows: 
+Task 1 - security-tool 
+Task 2 - security-event-logger 
+Task 3 - ip-address-validator 
+Task 4 - security-incident-manager 
+Task 5 - cyber-security-utilities
