@@ -25,3 +25,6 @@ def validate_ip(ip):
 
     #If it passes all the above the IP is valid
     return "Valid IP address."
+
+ip_add = input("Enter an IP Address: ")
+print(validate_ip(ip_add))
