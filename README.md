@@ -1,18 +1,15 @@
 Name: David Obanla
 Student ID: B01796680
-This is a repository containing code to test my understanding of the topics of python taught from week 1-6
+Campus: Lanarkshire Campus
+- This is a repository containing code to test my understanding of the topics of python taught from week 1-6
 
-Task 1 - Security Tool
-This is an authentication tool used to login into a security menu that has a minimum number of attempts
+Security Tool
+This tool is a menu of which any can be selected to do a specific task
+- The first tool is a Security Event Counter and it asks for a password times and it counts the number of times a password is icorrect
+- The second tool allows for a set number of attempts for a password if the amount is reached without inputting the correct password the whole program ends. If the right password is put in it ends as well
+- The third tool is login authentication that asks for a username and password and if they are inputted correctly the program ends if not the user is given three tries and if they can't access it in three tries a message displays to wait for 24 hours
+- The Last is an exit tool to exit the security tool menu
+- I added a function for better accessibility so that even if you are done with a tool you don't have to run the file again to use another tool unless you use the exit function
 
-Task 2 - Security Event Logger
-This is a tool used to monitor activity like security logs and keep a record of system activity
-
-Task 3 - IP Address Validator
-A function that can validate IP Addresses to see if they are usable
-
-Task 4 - Security Incident Manager
-Using what I learned from dictionaries I am making an incident manager that updates about a security incident
-
-Task 5 - Reusable CyberSceuroty Utilities
-This Task asks a user for a password, an IP Address and if they both meet the requirements they are given access but if the password doesn't meet the requirement they can either enter a different one password or they get the option to generate a random password
+Instructions
+- You copy the file and run it 
