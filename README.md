@@ -6,3 +6,5 @@ This is a repository containing code to test my understanding of the topics of p
  Security Incident Manager
 Using what I learned from dictionaries I am making an incident manager that updates about a security incident
 
+Instructions
+- You copy the file and run it
