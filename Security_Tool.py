@@ -28,9 +28,11 @@ def security_event_counter():
     if incorrect_percentage > 50: 
         print(f"{incorrect_percentage}% of the passwords entered were incorrect")
 
-#This tool gives us a chance to write our password at least 5 until we get the right password
+#This tool gives us a chance to write our password at least 5 times until we get the right password
 def brute_force_simulator():
     correct_pass = "Secure123"
+    
+    #This loop gives you five attempts to enter a password
     for i in range(1,6):
         password = input("Enter the password: ")
         if password == correct_pass:
@@ -38,10 +40,10 @@ def brute_force_simulator():
             
 #This tool checks that the login credentials are correct and lets us in if they are
 def login_auth():
-  right_user = "admin"
-  right_password = "admin123"
-  j = 0 
-  for i in range(1,4):
+    right_user = "admin"
+    right_password = "admin123"
+    j = 0 
+    for i in range(1,4):
       user = input("Enter a username: ")
       password = input("Enter a password: ")
       if user != right_user and password != right_password:
@@ -54,6 +56,7 @@ def login_auth():
           break
 
 #This function just makes sure we can select another tool in case we want to without ending the program and starting it up again
+#This was just added by me for easier accessibility it wasn't needed
 def options():
     ans = input("Would you like to use another tool in the security tool? (y/n): ")
     if ans == "y" or "Y":
